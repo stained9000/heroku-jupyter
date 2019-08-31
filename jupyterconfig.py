@@ -7,8 +7,8 @@ try:
     c = get_config()
 
     ### Password protection ###
-    #passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
-    #c.NotebookApp.password = IPython.lib.passwd(passwd)
+    passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
+    c.NotebookApp.password = IPython.lib.passwd(passwd)
 
     ### PostresContentsManager ###
     database_url = os.getenv('DATABASE_URL', None)
