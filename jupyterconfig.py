@@ -25,7 +25,7 @@ try:
         # multiple users to connect to the same database without trampling each other's
         # notebooks. By default, we use the result of result of getpass.getuser(), but
         # a username can be specified manually like so:
-        c.PostgresContentsManager.user_id = 'heroku'
+        #c.PostgresContentsManager.user_id = 'heroku'
 
         # Set a maximum file size, if desired.
         #c.PostgresContentsManager.max_file_size_bytes = 1000000 # 1MB File cap
@@ -34,4 +34,4 @@ except Exception:
     traceback.print_exc()
     # if an exception occues, notebook normally would get started
     # without password set. For security reasons, execution is stopped.
-    exit(-1)
+    #exit(-1)
